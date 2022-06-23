@@ -1,0 +1,33 @@
+.App {
+  ul {
+    list-style: none;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+
+    &::after {
+      display: block;
+      clear: both;
+    }
+  }
+
+  li {
+    float: left;
+    width: 20%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03);
+      border-radius: 4px;
+    }
+  }
+}
